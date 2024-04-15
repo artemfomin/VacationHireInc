@@ -38,6 +38,7 @@ Service `Rental` can be easily extended internally or cloned / forked with diffe
 - Unit tests are not done due to time shortage. To show how I do unit tests I share also my old technical task
 - Communication between APIs is not done as it's a good practice to use message brokers in distributed systems. However good setup of SB, Kafka or RabbitMQ is quite time consuming
 - Sometimes we can find unused classes. I added some (e.g. `CommandTransactionalBehavior`) to demonstrate different automation opportunities if it was production setup (in this example not SQLite which doesn't support transactions)
+- `CurrencyRates` should be updated by function or other serverless app and stored externally in S3 / Azure compatible file storage
 
 # Possible next actions
 
