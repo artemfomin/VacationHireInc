@@ -32,6 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F023A725-9
 		..\.docs\Vacation hire inc - App level.svg = ..\.docs\Vacation hire inc - App level.svg
 		..\.docs\Vacation hire inc - Data architecture.svg = ..\.docs\Vacation hire inc - Data architecture.svg
 		..\.docs\API docs.md = ..\.docs\API docs.md
+		..\.docs\Vacation hire inc - Component architecture.svg = ..\.docs\Vacation hire inc - Component architecture.svg
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{78BC82EB-E498-4102-9527-91A0E93C8B75}"

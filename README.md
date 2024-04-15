@@ -55,4 +55,7 @@ Service `Rental` can be easily extended internally or cloned / forked with diffe
 # Data architecture
 ![Data architecture](./.docs/Vacation%20hire%20inc%20-%20Data%20architecture.svg)
 
+# Component architecture
+![Component architecture](./.docs/Vacation%20hire%20inc%20-%20Component%20architecture.svg)
+
 
