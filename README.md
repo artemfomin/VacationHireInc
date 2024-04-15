@@ -15,6 +15,9 @@
 - Environment variable `ConnectionStrings__VHI` with connection string for Rental API
 - Environment variable `ConnectionStrings__VHI_Invoicing` with connection string for Invoicing API
 
+# API docs
+Please see [API documentation](./.docs/API%20docs.md)
+
 # Security
 
 Security measures should be performed in infrastructure as well.
@@ -44,11 +47,7 @@ Service `Rental` can be easily extended internally or cloned / forked with diffe
 - Create docker environment or K8s environment 
 - Add vendor images / charts (e.g. Apache Kafka, MinIO)
 
-# API docs
-
 # Application architecture
-[API documentation](./.docs/API%20docs.md)
-
 ![Application architecture](./.docs/Vacation%20hire%20inc%20-%20App%20level.svg)
 
 # Data architecture
