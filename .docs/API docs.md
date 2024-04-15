@@ -44,7 +44,7 @@
 
 ### Endpoints
 
-1. **`/orders` **POST** - Places a new rent order
+1. `/orders` **POST** - Places a new rent order
     - Request Format: JSON `PlaceRentOrderRequest`
     - Response Format: empty `200` if success.
       <br/><br/>
@@ -53,3 +53,22 @@
     - Response Format: empty `200` if success.
       <br/><br/>
 **Note:** Each `RentItem<TModel>` is a JSON object, with `TModel` carrying specific asset properties. For the request/response specifics, please refer to the respective class layouts for `RentItem`, `Sedan`, `Minivan`, `Truck`, `PlaceRentOrderRequest`, `CloseRentOrderRequest` and their properties.
+
+## Invoice API
+
+### Endpoints
+
+1. `/invoices` **GET** - Retrieves all invoices
+   - Request Format: None
+   - Response Format: JSON array of `Invoice` objects, `200` if success.
+     <br/><br/>
+2. `/invoices/{id}` **GET** - Retrieves a specific invoice by its `id`
+   - Request Format: URL parameter `id` as `Guid`
+   - Response Format: JSON `Invoice` object, `200` if success.
+     <br/><br/>
+3. `/invoices` **POST** - Creates a new invoice
+   - Request Format: JSON `Invoice`
+   - Response Format: `200` if success, newly created `Invoice` object in case of success.
+     <br/><br/>
+
+**Note:** `Invoice` is a JSON object with specific invoice properties. For the request/response specifics, please refer to the respective class layout for `Invoice` and its properties.

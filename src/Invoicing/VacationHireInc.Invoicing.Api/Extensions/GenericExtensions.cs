@@ -21,7 +21,7 @@ public static class GenericExtensions
     public static T DeepCopy<T>(this T source)
     {
         var json = JsonSerializer.Serialize(source);
-        return JsonSerializer.Deserialize<T>(json);
+        return JsonSerializer.Deserialize<T>(json)!;
     }
 
     private static void TraverseUpdateInternal<T>(T destination, T source, HashSet<object> visited) where T : class
