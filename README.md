@@ -17,7 +17,7 @@
 
 # API docs
 Please see [API documentation](./.docs/API%20docs.md)  
-Or feel free to use  [Postman request collection](./.postman/RentalAPI.postman_collection.json)
+Or feel free to use  [Rental Postman request collection](./.postman/RentalAPI.postman_collection.json) and [Invoicing Postman request collection](./.postman/InvoicingAPI.postman_collection.json)
 
 # Security
 
