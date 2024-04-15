@@ -44,7 +44,10 @@ Service `Rental` can be easily extended internally or cloned / forked with diffe
 - Create docker environment or K8s environment 
 - Add vendor images / charts (e.g. Apache Kafka, MinIO)
 
+# API docs
+
 # Application architecture
+![API documentation](./.docs/API%20docs.md)
 
 ![Application architecture](./.docs/Vacation%20hire%20inc%20-%20App%20level.svg)
 
