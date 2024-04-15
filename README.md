@@ -1,13 +1,13 @@
 | Requirement                   | Done | Comment 
 |-------------------------------|------|---------
-| Complete backend API          | Partialy | 
+| Complete backend API          | Partialy | For a complete backend had insufficient time and conditions (e.g. live environment) 
 | Dockerized microservices      | Done | 
 | Domains with bounded contexts | Done | 
 | RESTful API                   | Done | Minimal APIs
 | Basic authentication          | - | For multiple microservices authentiction should be more than basic (e.g. OIDC, SAML, etc) which improves complexity too much for a short test period
 | Cloud design patterns         | Partially | 12 Factor app
 | Mocked data layer             | Done | SQLite
-| Architecture documentation    | Done |
+| Architecture documentation    | Done | End of this README
 
 # Requirements
 
@@ -43,3 +43,12 @@ Service `Rental` can be easily extended internally or cloned / forked with diffe
 - Add IaC
 - Create docker environment or K8s environment 
 - Add vendor images / charts (e.g. Apache Kafka, MinIO)
+
+# Application architecture
+
+![Application architecture](./.docs/Vacation%20hire%20inc%20-%20App%20level.svg)
+
+# Data architecture
+![Data architecture](./.docs/Vacation%20hire%20inc%20-%20Data%20architecture.svg)
+
+
