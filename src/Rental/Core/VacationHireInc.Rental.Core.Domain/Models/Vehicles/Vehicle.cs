@@ -12,7 +12,7 @@ public abstract class Vehicle : IEntity
     public ushort Year { get; set; }
     public string Vin { get; set; } = null!;
     public double CurrentPrice { get; set; }
-    public string Description { get; set; } = null!;
+    public string? Description { get; set; } = null!;
     public bool IsAvailable { get; set; }
     public VehiclePassport? Passport { get; set; }
     public TechnicalCheck? TechnicalCheckCertificate { get; set; }

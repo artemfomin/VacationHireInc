@@ -8,4 +8,6 @@ public class RentOrder : IEntity
     public Guid RentItemId { get; set; }
     public DateTime RentStart { get; set; }
     public OrderStatus Status { get; set; }
+    public string? CustomerName { get; set; }
+    public string? CustomerPhone { get; set; }
 }

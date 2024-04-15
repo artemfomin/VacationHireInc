@@ -28,6 +28,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_Solution
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F023A725-92B8-49EB-838E-18490833B117}"
+	ProjectSection(SolutionItems) = preProject
+		..\.docs\Vacation hire inc - App level.svg = ..\.docs\Vacation hire inc - App level.svg
+		..\.docs\Vacation hire inc - Data architecture.svg = ..\.docs\Vacation hire inc - Data architecture.svg
+		..\.docs\API docs.md = ..\.docs\API docs.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{78BC82EB-E498-4102-9527-91A0E93C8B75}"
 EndProject
