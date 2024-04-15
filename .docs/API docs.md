@@ -2,58 +2,54 @@
 
 ### Endpoints
 
-1. **`/sedans`**
-
-    - **GET** `/sedans`: Returns a list of available Sedan cars
+1. `cars/sedans` **GET** - Returns a list of available Sedan cars
     - Request Format: None
     - Response Format: JSON list of `RentItem<Sedan>`
-
-2. **`/sedans/{id}`**
-
-    - **GET** `/sedans/{id}`: Returns a specific Sedan car with given `{id}`
+      <br/><br/>
+2. `cars/sedans/{id}` **GET** - Returns a specific Sedan car with given `{id}`
     - Request Format: None
     - Response Format: Single `RentItem<Sedan>` in JSON format
-
-3. **`/minivans`**
-
-    - **GET** `/minivans`: Returns a list of available Minivan cars
+      <br/><br/>
+3. `cars/minivans` **GET** - Returns a list of available Minivan cars
     - Request Format: None
     - Response Format: JSON list of `RentItem<Minivan>`
-
-4. **`/minivans/{id}`**
-
-    - **GET** `/minivans/{id}`: Returns a specific Minivan car with given `{id}`
+      <br/><br/>
+4. `cars/minivans/{id}` **GET** - Returns a specific Minivan car with given `{id}`
     - Request Format: None
     - Response Format: Single `RentItem<Minivan>` in JSON format
-
-5. **`/trucks`**
-
-    - **GET** `/trucks`: Returns a list of available Truck cars
+      <br/><br/>
+5. `cars/trucks` **GET** - Returns a list of available Truck cars
     - Request Format: None
     - Response Format: JSON list of `RentItem<Truck>`
-
-6. **`/trucks/{id}`**
-
-    - **GET** `/trucks/{id}`: Returns a specific Truck car with given `{id}`
+      <br/><br/>
+6. `cars/trucks/{id}` **GET** - Returns a specific Truck car with given `{id}`
     - Request Format: None
     - Response Format: Single `RentItem<Truck>` in JSON format
-
+      <br/><br/>
+7. `cars/sedans` **POST** - Creates a new Sedan car
+   - Request Format: JSON `RentItem<Sedan>`
+   - Response Format: Depends on implementation specifics, possibly a confirmation message or created Sedan ID.
+     <br/><br/>
+8. `cars/minivans` **POST** - Creates a new Minivan car
+   - Request Format: JSON `RentItem<Minivan>`
+   - Response Format: Depends on implementation specifics, possibly a confirmation message or created Minivan ID.
+     <br/><br/>
+9. `cars/trucks` **POST** - Creates a new Truck car
+   - Request Format: JSON `RentItem<Truck>`
+   - Response Format: Depends on implementation specifics, possibly a confirmation message or created Truck ID.
+     <br/><br/>
 **Note:** Replace `{id}` with an actual `id` in your request.
 
 ## Orders API
 
 ### Endpoints
 
-1. **`/orders`**
-
-    - **POST** `/orders`: Places a new rent order
+1. **`/orders` **POST** - Places a new rent order
     - Request Format: JSON `PlaceRentOrderRequest`
     - Response Format: empty `200` if success.
-
-2. **`/orders`**
-
-    - **PUT** `/orders`: Closes a rent order
+      <br/><br/>
+2. `/orders` **PUT** - Closes a rent order
     - Request Format: JSON `CloseRentOrderRequest`, with `id` property specifying the order to be closed
     - Response Format: empty `200` if success.
-
+      <br/><br/>
 **Note:** Each `RentItem<TModel>` is a JSON object, with `TModel` carrying specific asset properties. For the request/response specifics, please refer to the respective class layouts for `RentItem`, `Sedan`, `Minivan`, `Truck`, `PlaceRentOrderRequest`, `CloseRentOrderRequest` and their properties.
