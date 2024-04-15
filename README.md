@@ -16,7 +16,8 @@
 - Environment variable `ConnectionStrings__VHI_Invoicing` with connection string for Invoicing API
 
 # API docs
-Please see [API documentation](./.docs/API%20docs.md)
+Please see [API documentation](./.docs/API%20docs.md)  
+Or feel free to use  [Postman request collection](./.postman/RentalAPI.postman_collection.json)
 
 # Security
 
