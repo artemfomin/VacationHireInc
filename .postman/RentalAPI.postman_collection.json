@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "50365e1f-62e7-4d42-9a6c-1f5e724e67e4",
+		"name": "RentalAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26535643"
+	},
+	"item": [
+		{
+			"name": "Get all sedans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/sedans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"sedans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all minivans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/minivans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"minivans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all trucks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/trucks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"trucks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get sedan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/sedans/7671BE16-5EFF-40FA-B176-116B189D5918",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"sedans",
+						"7671BE16-5EFF-40FA-B176-116B189D5918"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get minivan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/minivans/7671BE16-5EFF-40FA-B176-116B189D5918",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"minivans",
+						"7671BE16-5EFF-40FA-B176-116B189D5918"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get truck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5223/cars/trucks/7671BE16-5EFF-40FA-B176-116B189D5918",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"trucks",
+						"7671BE16-5EFF-40FA-B176-116B189D5918"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create sedan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rentCost\": 70,\r\n    \"billingPeriod\": 24, \r\n    \"rentSubject\": {\r\n        \"someSedanSpecificProperty\": null,\r\n        \"passengerCount\": 4,\r\n        \"model\": \"Corolla\",\r\n        \"mark\": \"Toyota\",\r\n        \"mileage\": 564254,\r\n        \"gear\": 2,\r\n        \"year\": 2008,\r\n        \"vin\": \"234534253425345\",\r\n        \"currentPrice\": 5000,\r\n        \"description\": \"Whatever\",\r\n        \"isAvailable\": false,\r\n        \"passport\": null,\r\n        \"technicalCheckCertificate\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5223/cars/sedans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"sedans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create minivan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rentCost\": 120,\r\n    \"billingPeriod\": 24, \r\n    \"rentSubject\": {\r\n        \"someMinivanSpecificProperty\": \"Not empty\",\r\n        \"passengerCount\": 10,\r\n        \"model\": \"Model 2\",\r\n        \"mark\": \"Ford\",\r\n        \"mileage\": 564254,\r\n        \"gear\": 2,\r\n        \"year\": 2020,\r\n        \"vin\": \"5637gfdhhdfgh6578678fghh\",\r\n        \"currentPrice\": 20000,\r\n        \"description\": \"Cool minivan\",\r\n        \"isAvailable\": true,\r\n        \"passport\": null,\r\n        \"technicalCheckCertificate\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5223/cars/minivans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"minivans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create truck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rentCost\": 500,\r\n    \"billingPeriod\": 24, \r\n    \"rentSubject\": {\r\n        \"someTruckSpecificProperty\": \"Filled\",\r\n        \"carryCapacity\": 5000,\r\n        \"model\": \"BigOne\",\r\n        \"mark\": \"MAN\",\r\n        \"mileage\": 24562,\r\n        \"gear\": 1,\r\n        \"year\": 2021,\r\n        \"vin\": \"4657665KHBGJH43345\",\r\n        \"currentPrice\": 5000,\r\n        \"description\": \"Cool truck\",\r\n        \"isAvailable\": true,\r\n        \"passport\": null,\r\n        \"technicalCheckCertificate\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5223/cars/trucks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"cars",
+						"trucks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place rent order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order\": {\r\n        \"rentItemId\": \"58F40D07-94CC-4121-A934-DF0F96C637C4\",\r\n        \"rentStart\": \"2024-07-20T21:45:29.875Z\",\r\n        \"status\": 1,\r\n        \"customerName\": \"John Doe\",\r\n        \"customerPhone\": \"+37199999999\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5223/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close rent order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rentOrderId\": \"ACFDC37A-2AC6-43BE-AE59-D3AC4B660E9B\",\r\n    \"summary\": {\r\n        \"rentEndDate\": \"2024-07-20T21:45:29.875Z\",\r\n        \"total\": 0,\r\n        \"rows\": [\r\n            {\r\n                \"name\": \"No gasoline\",\r\n                \"description\": \"At rent the tank was full\",\r\n                \"cost\": 50\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5223/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5223",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

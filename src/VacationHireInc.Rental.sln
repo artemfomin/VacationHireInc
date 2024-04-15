@@ -35,6 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F023A725-9
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{78BC82EB-E498-4102-9527-91A0E93C8B75}"
+	ProjectSection(SolutionItems) = preProject
+		..\.postman\RentalAPI.postman_collection.json = ..\.postman\RentalAPI.postman_collection.json
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationHireInc.Invoicing.Api", "Invoicing\VacationHireInc.Invoicing.Api\VacationHireInc.Invoicing.Api.csproj", "{7D2541AD-4467-4CBD-AE74-4372586FAA61}"
 EndProject

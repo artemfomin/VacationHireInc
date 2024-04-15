@@ -28,7 +28,7 @@ internal static class ApiConfiguration
             async (HttpContext http, PlaceRentOrderRequest req) =>
                 await http.MapMediatorRequest(req));
         ordersApi.MapPut("/",
-            async (HttpContext http, Guid id, CloseRentOrderRequest req) =>
+            async (HttpContext http, CloseRentOrderRequest req) =>
                 await http.MapMediatorRequest(req));
         
         return app;
